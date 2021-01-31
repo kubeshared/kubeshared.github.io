@@ -23,28 +23,40 @@
     var NexT = window.NexT || {};
     var CONFIG = {"hostname":"example.com","root":"/","images":"/images","scheme":"Muse","version":"8.2.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":false,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"}};
   </script>
-<meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://example.com/index.html">
+<meta name="description" content="吴恩达教你如何读论文，高效了解新领域。 就算是博士，也很难对所有的关键技术都参透了解。那么如何有效了解一个新领域，是研究者们必备的一项技能。  最近，一位博主就亲身示范了吴恩达的方法，在Medium上，两天即获得1.7k赞。 方法具体如何呢？我们就以「姿态估计」这一技术为例，来介绍一下这个方法吧。 系统阅读论文集 既然有了目标，第一步收集资源，并整合起来。 论文、博客文章、GitHub资源库、视">
+<meta property="og:type" content="article">
+<meta property="og:title" content="如何阅读论文">
+<meta property="og:url" content="http://example.com/2020/07/17/how-read-paper/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="吴恩达教你如何读论文，高效了解新领域。 就算是博士，也很难对所有的关键技术都参透了解。那么如何有效了解一个新领域，是研究者们必备的一项技能。  最近，一位博主就亲身示范了吴恩达的方法，在Medium上，两天即获得1.7k赞。 方法具体如何呢？我们就以「姿态估计」这一技术为例，来介绍一下这个方法吧。 系统阅读论文集 既然有了目标，第一步收集资源，并整合起来。 论文、博客文章、GitHub资源库、视">
 <meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://miro.medium.com/max/2000/0*sO7_Eos7OpKMG09X.jpg">
+<meta property="og:image" content="https://pic1.zhimg.com/80/v2-f9a97b2c2de4097ef683c61d2fa660c6_720w.jpg">
+<meta property="og:image" content="https://miro.medium.com/max/4032/1*1njy2NQmw863I5n4unTfJA.jpeg">
+<meta property="og:image" content="https://miro.medium.com/max/1297/1*2MdLq0zisYQAikdZRbL1FQ.png">
+<meta property="og:image" content="https://miro.medium.com/max/1281/1*9cYDHnFlU6GMg6izDW2MXw.png">
+<meta property="og:image" content="https://miro.medium.com/max/5957/1*H2ZxGrI-8XZHoS5Df40i1Q.jpeg">
+<meta property="og:image" content="https://pic3.zhimg.com/80/v2-57390f8f8e8b2ab998e2221cc8b5d694_720w.jpg">
+<meta property="article:published_time" content="2020-07-17T00:00:00.000Z">
+<meta property="article:modified_time" content="2021-01-31T14:38:00.311Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://miro.medium.com/max/2000/0*sO7_Eos7OpKMG09X.jpg">
 
 
-<link rel="canonical" href="http://example.com/">
+<link rel="canonical" href="http://example.com/2020/07/17/how-read-paper/">
 
 
 <script class="page-configurations">
   // https://hexo.io/docs/variables.html
   CONFIG.page = {
     sidebar: "",
-    isHome : true,
-    isPost : false,
+    isHome : false,
+    isPost : true,
     lang   : 'en'
   };
 </script>
-<title>Hexo</title>
+<title>如何阅读论文 | Hexo</title>
   
 
 
@@ -142,7 +154,7 @@
 
   <aside class="sidebar">
 
-    <div class="sidebar-inner sidebar-overview-active">
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
       <ul class="sidebar-nav">
         <li class="sidebar-nav-toc">
           Table of Contents
@@ -155,6 +167,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%B3%BB%E7%BB%9F%E9%98%85%E8%AF%BB%E8%AE%BA%E6%96%87%E9%9B%86"><span class="nav-number">1.</span> <span class="nav-text">系统阅读论文集</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%AE%BA%E6%96%87%E8%87%B3%E5%B0%91%E8%A6%81%E7%9C%8B%E4%B8%89%E9%81%8D"><span class="nav-number">2.</span> <span class="nav-text">论文至少要看三遍</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%97%AE%E8%87%AA%E5%B7%B1%E9%97%AE%E9%A2%98"><span class="nav-number">3.</span> <span class="nav-text">问自己问题</span></a></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -208,16 +221,17 @@
 </noscript>
 
 
-    <div class="main-inner index posts-expand">
+    <div class="main-inner post posts-expand">
 
-    
+
+  
 
 
 <div class="post-block">
   
   
 
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="en">
     <link itemprop="mainEntityOfPage" href="http://example.com/2020/07/17/how-read-paper/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -230,9 +244,9 @@
       <meta itemprop="name" content="Hexo">
     </span>
       <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2020/07/17/how-read-paper/" class="post-title-link" itemprop="url">如何阅读论文</a>
-        </h2>
+        <h1 class="post-title" itemprop="name headline">
+          如何阅读论文
+        </h1>
 
         <div class="post-meta-container">
           <div class="post-meta">
@@ -262,7 +276,7 @@
     
     
     <div class="post-body" itemprop="articleBody">
-          <p><img src="https://miro.medium.com/max/2000/0*sO7_Eos7OpKMG09X.jpg" alt="Image for post"></p>
+        <p><img src="https://miro.medium.com/max/2000/0*sO7_Eos7OpKMG09X.jpg" alt="Image for post"></p>
 <p>吴恩达教你如何读论文，高效了解新领域。</p>
 <p>就算是博士，也很难对所有的关键技术都参透了解。那么如何有效了解一个新领域，是研究者们必备的一项技能。</p>
 <p><img src="https://pic1.zhimg.com/80/v2-f9a97b2c2de4097ef683c61d2fa660c6_720w.jpg" alt="img"></p>
@@ -316,7 +330,6 @@
 <p>视频链接：</p>
 <p><a href="https://link.zhihu.com/?target=https://www.youtube.com/watch?v=733m6qBH-jI">https://www.youtube.com/watch?v=733m6qBH-jI</a></p>
 
-      
     </div>
 
     
@@ -324,11 +337,13 @@
     
 
     <footer class="post-footer">
-        <div class="post-eof"></div>
-      
+
+        
+
     </footer>
   </article>
 </div>
+
 
 
 
